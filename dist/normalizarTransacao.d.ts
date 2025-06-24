@@ -26,7 +26,7 @@ declare global {
 export default function normalizarTransacao(transacao: TransacaoAPI): {
     nome: string;
     id: number;
-    data: string;
+    data: Date;
     status: StatusTransacao;
     email: string;
     moeda: string;
