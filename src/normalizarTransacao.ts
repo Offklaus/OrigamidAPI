@@ -28,7 +28,7 @@ declare global {
         novo: boolean;
     }
 }
-export default function normalizarTransacao(transacao: TransacaoAPI) {
+export default function normalizarTransacao(transacao: TransacaoAPI): Transacao {
     return {
         nome: transacao.Nome,
         id: transacao.ID,

@@ -23,14 +23,4 @@ declare global {
         novo: boolean;
     }
 }
-export default function normalizarTransacao(transacao: TransacaoAPI): {
-    nome: string;
-    id: number;
-    data: Date;
-    status: StatusTransacao;
-    email: string;
-    moeda: string;
-    valor: number | null;
-    pagamento: TransacaoPagamento;
-    novo: boolean;
-};
+export default function normalizarTransacao(transacao: TransacaoAPI): Transacao;
